@@ -13,9 +13,9 @@ public class Main {
         
         int perimeter = 2*lenght + 2*width;
          
-        int diagonal = lenght*lenght+width*width;
+        double diagonal = Math.sqrt(lenght*lenght+width*width);
         System.out.printf("Периметр прямоугольника: %d \n", perimeter);
-        System.out.printf("Диагональ прямоугольника: %.2f", Math.sqrt(diagonal));
+        System.out.printf("Диагональ прямоугольника: %.2f", diagonal);
         
         in.close();
     }
