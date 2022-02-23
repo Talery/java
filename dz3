@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class Main {
+   
+    public static void main(String[] args) {
+           
+        Scanner in = new Scanner(System.in);
+        System.out.print("Длина прямоугольника: ");
+        int lenght = in.nextInt();
+        
+        System.out.print("Ширина прямоугольника: ");
+        int width = in.nextInt();
+        
+        int perimeter = 2*lenght + 2*width;
+         
+        int diagonal = lenght*lenght+width*width;
+        System.out.printf("Периметр прямоугольника: %d \n", perimeter);
+        System.out.printf("Периметр прямоугольника: %.2f", Math.sqrt(diagonal));
+        
+        in.close();
+    }
+}
