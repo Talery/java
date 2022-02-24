@@ -1,51 +1,45 @@
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.IOException; 
+import java.io.BufferedReader; 
+import java.io.InputStreamReader; 
  
-public class Main {
-    public static void main(String[] args)
-            throws IOException {
+public class Main { 
+public static void main(String[] args) 
+throws IOException { 
  
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in));
-               int result = 0;
-  System.out.print("Введите первое число: ");
-String num1str = reader.readLine();
-int num1 = Integer.parseInt(num1str);
+BufferedReader reader = new BufferedReader( 
+new InputStreamReader(System.in)); 
+double result = 0; 
+System.out.print("Введите первое число: "); 
+String num1str = reader.readLine(); 
+double num1 = Double.parseDouble(num1str); 
+ 
+System.out.print("Введите второе число: "); 
+String num2str = reader.readLine(); 
+Double num2 = Double.parseDouble(num2str); 
+ 
+System.out.print("Выберите действие: +, -, *, /: "); 
+String operation = reader.readLine(); 
 
-   System.out.print("Введите второе число: ");
-        String num2str = reader.readLine();
-int num2 = Integer.parseInt(num2str);
-
-System.out.print("Выберите действие: +, -, *, /: ");
-       String operation = reader.readLine();
-       try {
-        if (operation.equals("+")) {
-           
-                result = num1 + num2;
-            }
-            else if (operation.equals("-")) {
-                result = num1 - num2;
-            }
-            else if (operation.equals("/")) {
-                result = num1 / num2;
-            }
-            else if (operation.equals("*")) {
-                result = num1 * num2;
-            }
-            
-			
-			result = num1 / 0;
-
-			
-		} catch (ArithmeticException e) {
-			
-			System.out.print("Error");
+if (operation.equals("+")) { 
+ 
+result = num1 + num2; 
+} 
+else if (operation.equals("-")) { 
+result = num1 - num2; 
+} 
+else if (operation.equals("/")) { 
+result = num1 / num2; 
+} 
+else if (operation.equals("*")) { 
+result = num1 * num2; 
+} 
+      if (result==num1/0) {
+            System.out.print("На 0 делить нельзя");
             return;
-					}
-            System.out.print("Результат:");
-                System.out.print(result);
-       
-            }
         }
-
+ 
+System.out.println("Результат: " + result); 
+ 
+ 
+} 
+}
