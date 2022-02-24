@@ -1,0 +1,23 @@
+import java.util.Scanner;
+ 
+public class Main {
+   
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.print("Введите число: ");
+       int num1 = reader.nextInt();
+       
+
+       if (num1<0){
+            System.out.print(num1*num1);
+       }
+       else{
+             
+                 
+            System.out.print("Ошибка");
+        }
+         
+    }
+}
+
