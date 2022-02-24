@@ -1,0 +1,26 @@
+import java.util.Scanner;
+ 
+public class Main {
+   
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.print("Введите первое число: ");
+       int num1 = reader.nextInt();
+       System.out.print("Введите второе число: ");
+       int num2 = reader.nextInt();
+
+       if (num1==num2){
+            System.out.print("Введите разные числа");
+       }
+       else{
+             if (num1<num2) {
+                 
+            System.out.print(num2 +" " +num1);
+        }
+         else {
+              System.out.print(num1 +" " +num2);
+         }
+    }
+}
+}
