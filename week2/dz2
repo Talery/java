@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Main {
+   
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.print("Введите первое число: ");
+       int num1 = reader.nextInt();
+
+        System.out.print("Введите второе число: ");
+       int num2 = reader.nextInt();
+       
+        
+       
+        if (num1==num2) {
+            System.out.print("Числа равны");
+        }
+         else {
+              System.out.print("Числа не равны");
+        
+    }
+}
+}
