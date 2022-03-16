@@ -10,7 +10,7 @@ public class Main {
        
 
        if (num1<0){
-            System.out.print(num1*num1);
+            System.out.print((int)Math.pow(num1, 2));
        }
        else{
              
@@ -20,4 +20,3 @@ public class Main {
          
     }
 }
-
